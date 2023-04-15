@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Sidebar from '../components/sidebar'
 import Column from '../components/column'
 import styles from '../styles/Home.module.css'
- 
+import Header from '../components/header'
+
 const data = [
   "Software Engineering",
   "Computer Science",
@@ -31,8 +33,9 @@ export default function Home() {
         <link rel="icon" href="./brand.png" />
       </Head>
 
+      <Header />
       <main className={styles.wrapper}>
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
         <Column title="Bachelor Degree" options={data} />
       </main>
 

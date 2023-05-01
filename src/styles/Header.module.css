@@ -11,5 +11,18 @@
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
+}
+
+.hammenu {
+    border: 0px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+.hammenu {
+display: none;
+}
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Sidebar from '../components/sidebar'
 import Column from '../components/column'
 import styles from '../styles/Home.module.css'
+
  
 const data = [
   "Software Engineering",
@@ -22,6 +23,39 @@ const data = [
   "Media Technology"
 ]
 
+const data2 = [
+  "Computer Science",
+  "Information Systems",
+  "Network Engineering",
+  "Software Engineering",
+  "Cybersecurity",
+  "Artificial Intelligence and Machine Learning",
+]
+
+
+const data3 = [
+  "Computer Architecture and Design",
+  "Computer Networks and Communications",
+  "Artificial Intelligence and Machine Learning",
+  "Robotics and Automation",
+  "Cybersecurity and Information Assurance",
+  "Computer Vision and Image Processing",
+  "Distributed Computing and Cloud Computing",
+  "Embedded Systems",
+  "High-Performance Computing",
+  "VLSI Design and Electronic Design Automation`",
+
+]
+
+const data4 = [
+"Anatomy",
+"Physiology",
+"Kinesiology",
+"Exercise Science",
+"Sports Psychology",
+"Nutrition",
+]
+
 export default function Home() {
   return (
     <div>
@@ -29,13 +63,18 @@ export default function Home() {
         <title>LifePath</title>
         <meta name="description" content="Help people to find the right path in life, studying and carrier" />
         <link rel="icon" href="./brand.png" />
+
       </Head>
 
       <main className={styles.wrapper}>
         <Sidebar></Sidebar>
         <Column title="Bachelor Degree" options={data} />
-      </main>
+        <Column title="Master Degree" options={data2} />
+        <Column title="PHD" options={data3} />
+        <Column title="Sport" options={data4} />
 
+        </main>
+      
       {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -56,6 +56,7 @@
 
 .dropbtn:hover {
   background-color: #4f555a;
+  width: 100%;
 }
 
 .dropdi {
@@ -63,6 +64,11 @@
   left: 3.4rem;
   bottom: 1.2rem;
 }
+
+.hbtn {
+width: 100%;
+}
+
 
 @media only screen and (max-width: 768px) {
  .dropdown{

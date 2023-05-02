@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Sidebar from '../components/sidebar'
 import Column from '../components/column'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react'
 
- 
 const data = [
   "Software Engineering",
   "Computer Science",
@@ -56,6 +56,7 @@ const data4 = [
 "Nutrition",
 ]
 
+
 export default function Home() {
   return (
     <div>
@@ -63,7 +64,6 @@ export default function Home() {
         <title>LifePath</title>
         <meta name="description" content="Help people to find the right path in life, studying and carrier" />
         <link rel="icon" href="./brand.png" />
-
       </Head>
 
       <main className={styles.wrapper}>
@@ -72,7 +72,6 @@ export default function Home() {
         <Column title="Master Degree" options={data2} />
         <Column title="PHD" options={data3} />
         <Column title="Sport" options={data4} />
-
         </main>
       
       {/* <footer className={styles.footer}>
